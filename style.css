@@ -83,22 +83,48 @@ body {
 }
 
 .btn-box a {
+    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 150px;
     height: 100%;
-    background: cadetblue;
+    background: rgb(53, 66, 67);
     border: 2px solid cadetblue;
     border-radius: 8px;
     font-size: 19px;
-    color: #081b29;
+    color: cadetblue;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
 }
 
-.btn-box a:nth-child(2) {
+.btn-box a:hover {
+    background: rgb(255, 255, 255);
+}
+
+.home-sci {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    bottom: 40px;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
     background: transparent;
-    color:cadetblue
+    border: 2px solid cadetblue;
+    border-radius: 50%;
+    font-size: 20px;
+    color: cadetblue;
+    text-decoration: none;
 }
